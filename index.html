@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>Canvas tutorial</title>
+    <style>
+      #canvas_container{
+        width: 90%;
+        margin: 0 auto;
+      }
+      #canvas_container canvas{
+        width: 100%;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div class="pdf-toolbar">
+      <div id="navigation_controls">
+         <button class="pdf-toolbar-button" id="previous">Previous</button>
+         <input class="pdf-input" id="current_page" value="1" type="number"/>
+         <button class="pdf-toolbar-button" id="next">Next</button>
+       </div>
+   
+      <div id="zoom_controls">  
+        <button class="pdf-toolbar-button" id="zoom_in">+</button>
+        <button class="pdf-toolbar-button" id="zoom_out">-</button>
+       </div>
+   </div>
+
+   <div id = "canvas_container">
+    <canvas id = "pdf_renderer"> </canvas>
+   </div>
+ 
+   
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.0.943/pdf.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
