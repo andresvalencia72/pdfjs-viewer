@@ -2,14 +2,30 @@
   <head>
     <title>Canvas tutorial</title>
     <style>
-      #canvas_container{
-        width: 90%;
-        margin: 0 auto;
+      body{
+        background-color: gray;
       }
-      #canvas_container canvas{
+       #canvas_container{
+        display: flex;
+        justify-content: center;
         width: 100%;
         margin: 0 auto;
       }
+      #canvas_wrapper{
+        position: relative;
+      }
+      #pdf_renderer{
+        /* width: 100%; */
+        margin: 0 auto;
+      }
+      .rectangle:hover{
+        cursor: pointer;
+      }
+      /*
+      #canvas_container canvas{
+        width: 100%;
+        margin: 0 auto;
+      } */
     </style>
   </head>
   <body>
@@ -28,7 +44,13 @@
    </div>
 
    <div id = "canvas_container">
-    <canvas id = "pdf_renderer"> </canvas>
+    <div id="canvas_wrapper">
+      <canvas id = "pdf_renderer"></canvas>
+    </div>
+   </div>
+
+   <div class="renderedElements">
+    
    </div>
  
    
